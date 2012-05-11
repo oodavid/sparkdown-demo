@@ -1,0 +1,3 @@
+[submodule "sparkdown"]
+	path = sparkdown
+	url = git@github.com:oodavid/sparkdown.git

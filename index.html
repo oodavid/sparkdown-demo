@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Sparkdown Demo</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="sparkdown/sparkdown.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			$('textarea').sparkdown();
+		});
+	</script>
+	<style type="text/css">
+		textarea {width: 600px; height: 400px;}
+		/* Styling Structure for your reference */
+			.sparkdown			{}
+			.sparkdown-toolbar	{}
+			.sparkdown-tool		{}
+			.sparkdown-spacer	{}
+			.sparkdown textarea	{}
+		/* This is how I roll */
+			.sparkdown				{width: 606px; font: 11px/15px Sans-Serif;}
+			.sparkdown-toolbar		{height: 25px; text-align: center; background: #DDDDDD;}
+			.sparkdown-spacer,
+			.sparkdown-tool			{height: 15px; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;}
+			.sparkdown-tool:hover	{background-color: #ABCDEF;}
+			.sparkdown-tool			{cursor: pointer; padding: 5px 10px; text-transform: uppercase;}
+			.sparkdown-spacer		{cursor: default; margin: 5px; border-left: 1px solid #AAAAAA; overflow: hidden; text-indent: -1000px; white-space: pre;}
+
+	</style>
+</head>
+<body>
+	<h1>Sparkdown Demo</h1>
+	<textarea># Heading 1
+
+## Heading 2
+
+### Heading 3
+
+Paragraph of *emphasised*, **strong** and ***strongly emphasised*** text.
+
+> This is a blockquote, it will parse correctly even if it's so long that it hard-wraps to the next line
+
+* Candy
+* Gum
+* Booze
+
+1. Red
+2. Green
+3. Blue
+
+And then there's [links](http://google.com/) and ![imagery](/path/to/img.jpg)
+
+Don't forget about `inline code blocks`
+
+    And indentation style code blocks</textarea>
+
+	<p>and another one, just to make sure it works properly :-)</p>
+	<textarea></textarea>
+</body>
+</html>
