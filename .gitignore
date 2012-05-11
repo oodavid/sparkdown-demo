@@ -1,6 +1,6 @@
 ##### Backup files and settings
 .dropbox
-.sparkdown.sublime-*
+sparkdown.sublime-*
 
 ##### Operating System gubbins
 .DS_Store?
