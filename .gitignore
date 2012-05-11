@@ -1,0 +1,9 @@
+##### Backup files and settings
+.dropbox
+.sparkdown.sublime-*
+
+##### Operating System gubbins
+.DS_Store?
+ehthumbs.db
+Icon?
+Thumbs.db
