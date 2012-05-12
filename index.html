@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
 	<title>Sparkdown Demo</title>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="sparkdown/jquery.caret.1.02.min.js"></script>
+	<script type="text/javascript" src="sparkdown/showdown.min.js"></script>
 	<script type="text/javascript" src="sparkdown/sparkdown.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(e){
@@ -11,21 +13,23 @@
 		});
 	</script>
 	<style type="text/css">
-		textarea {width: 600px; height: 400px;}
+		textarea {width: 700px; height: 400px;}
 		/* Styling Structure for your reference */
 			.sparkdown			{}
 			.sparkdown-toolbar	{}
 			.sparkdown-tool		{}
 			.sparkdown-spacer	{}
 			.sparkdown textarea	{}
+			.sparkdown-preview	{}
 		/* This is how I roll */
-			.sparkdown				{width: 606px; font: 11px/15px Sans-Serif;}
+			.sparkdown				{position: relative; width: 706px; font: 11px/15px Sans-Serif;}
 			.sparkdown-toolbar		{height: 25px; text-align: center; background: #DDDDDD; -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none;}
 			.sparkdown-spacer,
-			.sparkdown-tool			{height: 15px; display:-moz-inline-stack; display:inline-block; zoom:1; *display:inline;}
+			.sparkdown-tool			{height: 15px; display: -moz-inline-stack; display: inline-block; zoom: 1; *display: inline;}
 			.sparkdown-tool:hover	{background-color: #ABCDEF;}
 			.sparkdown-tool			{cursor: pointer; padding: 5px 10px; text-transform: uppercase;}
 			.sparkdown-spacer		{cursor: default; margin: 5px; border-left: 1px solid #AAAAAA; overflow: hidden; text-indent: -1000px; white-space: pre;}
+			.sparkdown-preview		{position: absolute; top: 25px; left: 0; right: 0; bottom: 0; background: #EEEEEE; border: 1px solid #000000; overflow-x: auto; overflow-y: scroll;}
 
 	</style>
 </head>
